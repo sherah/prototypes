@@ -1,0 +1,15 @@
+body {
+	background-color: #f5f5f5;
+	font-family: "Open Sans";
+}
+
+.main {
+	margin: 0 auto;
+	width: 450px;
+}
+
+.form {
+	width:400px;
+	background-color:#CCE7CD;
+	padding: 1em;
+}
