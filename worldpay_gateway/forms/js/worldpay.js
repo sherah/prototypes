@@ -72,7 +72,7 @@
 
 				// Scary things
 				'cvc'
-			];
+			],
 
 		postdata = {
 			action: 'di_wp_validate',
@@ -83,7 +83,7 @@
 		});
 
 		$.ajax({
-			'url': mw.util.wikiScript( 'api' ),
+			'url': mw.util.wikiScript( api ),
 			'data': postdata,
 			'dataType': 'json',
 			'type': 'POST',
@@ -101,8 +101,8 @@
 					successCallback();
 				}
 			},
-			error: function( xhr ) {
-				alert( mw.msg( 'donate_interface-error-msg-general' ) );
+			error: function() {
+				window.alert( mw.msg( 'donate_interface-error-msg-general' ) );
 			}
 		});
 	}
