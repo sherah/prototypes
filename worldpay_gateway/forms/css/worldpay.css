@@ -236,6 +236,9 @@ select#state.us, select#state.au, select#state.ca {
 #donate tr{
 	padding: 1em;
 }
+#ccError {
+	display: none;
+}
 
 
 /* Specific element overrides */

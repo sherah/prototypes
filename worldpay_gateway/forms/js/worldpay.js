@@ -83,7 +83,7 @@
 		});
 
 		$.ajax({
-			'url': mw.util.wikiScript( api ),
+			'url': mw.util.wikiScript( 'api' ),
 			'data': postdata,
 			'dataType': 'json',
 			'type': 'POST',
@@ -152,7 +152,12 @@
 		$( '#paymentSubmitBtn' ).click(function() {
 			if ( validateClientSide() ) {
 				validateServerSide( submitFormForTokenization );
+				$('#ccError').css('display', 'none');
+			} else {
+				//make divs appear with error messages:
+				$('#ccError').show();
 			}
+			validate_personal( $('#worldpayForm') );
 			return false;
 		});
 	});
