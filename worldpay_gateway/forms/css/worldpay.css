@@ -236,8 +236,11 @@ select#state.us, select#state.au, select#state.ca {
 #donate tr{
 	padding: 1em;
 }
-#ccError {
+.ccError {
 	display: none;
+	color: red;
+	font-weight: bold;
+	font-size: 12px;
 }
 
 
